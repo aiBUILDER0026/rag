@@ -3,6 +3,7 @@ uvicorn
 python-multipart
 llama-cpp-python
 sentence-transformers
-pinecone-client
+pinecone
 pdfplumber
 requests
+
