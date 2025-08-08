@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Header
 from pydantic import BaseModel
 from typing import List
-import rag_model  # import your RAG logic here
+import rag  # import your RAG logic here
 
 app = FastAPI()
 
@@ -29,3 +29,4 @@ async def run_query(request: QueryRequest, authorization: str = Header(None)):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
